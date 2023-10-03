@@ -32,17 +32,15 @@
             var radius = double.Parse(Console.ReadLine());
             double area = AreaOfCircle(radius);
             Console.WriteLine($"The area of the circle with radius {radius} is: {area}");
-            static double AreaOfCircle(double radius)
-                {
-                   double area = Math.PI * Math.Pow(radius, 2);
-                   return area;
-                }
-
-
             }
 
 
 
+        }
+        static double AreaOfCircle(double radius)
+        {
+            double area = Math.PI * Math.Pow(radius, 2);
+            return area;
         }
     }
 }
